@@ -1,0 +1,295 @@
+{
+  "memo": "ListGuard listing risk memo",
+  "version": 1,
+  "generated_at": "2026-11-24T23:25:46.712Z",
+  "network": "Telegraph testnet — beta 2 (Ethereum Sepolia escrow)",
+  "application": {
+    "project": "NorthBridge Yield (NBY) — sample listing application (sanctions test case)",
+    "token": {
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "chain": "ethereum"
+    },
+    "entities": [
+      "Lazarus Group"
+    ],
+    "treasury": [
+      "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+    ],
+    "social": "@NorthBridgeYield"
+  },
+  "checks": [
+    {
+      "id": "audit",
+      "title": "Smart contract audit",
+      "intent": "SMART_CONTRACT_AUDIT_GENERAL",
+      "status": "warn",
+      "detail": "Audit answer mentions high-severity classes (reentrancy / access control / high severity); unstructured answer, human review advised.",
+      "evidence": {
+        "miner_id": "openai",
+        "miner_name": "openai",
+        "endpoint": "/chat",
+        "result": "I am sorry, but I cannot audit smart contracts in real-time. My capabilities do not include live interaction with the Ethereum blockchain or the ability to analyze smart contract code directly from an address. Therefore, I cannot provide a report on reentrancy, access control, overflow, delegatecall, and selfdestruct risks for the contract at 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, nor can I give an overall risk rating.\n\nTo get an audit, you would need to engage a professional smart contract auditing firm or use specialized blockchain analysis tools that can inspect the contract's bytecode and source code (if available).",
+        "result_shape": "raw",
+        "shape_error": "no_format",
+        "cost_usd": 0,
+        "duration_ms": 1444,
+        "timestamp": "2026-11-24T23:24:54.346969388Z",
+        "reasoning": "last resort, no miner could answer: intent_not_active: SMART_CONTRACT_AUDIT_GENERAL is registered, not active, so it takes no routed requests: output schema: it has no response format, its own or its family's; input schema: no response format declares inputs, its own or its family's",
+        "intent": "SMART_CONTRACT_AUDIT_GENERAL",
+        "intent_version": 1,
+        "signal_hash": "0x47a160a1be4e3148d3175fa06e1e00b99e06542d36e39d5b2fdbb4a1b78531de",
+        "warnings": [
+          "no miner could answer this, so it was answered by a general model"
+        ],
+        "delivery": "last_resort"
+      },
+      "purchase": {
+        "cost_uusdc": 260000,
+        "cost_usd": 0.26,
+        "signal_hashes": [
+          "0x47a160a1be4e3148d3175fa06e1e00b99e06542d36e39d5b2fdbb4a1b78531de"
+        ],
+        "signal_verification": [
+          {
+            "hash": "0x47a160a1be4e3148d3175fa06e1e00b99e06542d36e39d5b2fdbb4a1b78531de",
+            "verified": true,
+            "node_status": "returned"
+          }
+        ]
+      },
+      "latency_ms": 3680
+    },
+    {
+      "id": "holders",
+      "title": "Holder concentration",
+      "intent": "TOKEN_HOLDER_COUNT_GENERAL",
+      "status": "pass",
+      "detail": "3353117 distinct holders.",
+      "evidence": {
+        "token": null,
+        "chain": null,
+        "holders_count": 3353117,
+        "token_symbol": null
+      },
+      "purchase": {
+        "cost_uusdc": 10000,
+        "cost_usd": 0.01,
+        "signal_hashes": [
+          "0x54dc2a42aea4845a8c0b9a7e632f862cb9dd331e4c4782a00a9272c5c82d4763"
+        ],
+        "signal_verification": [
+          {
+            "hash": "0x54dc2a42aea4845a8c0b9a7e632f862cb9dd331e4c4782a00a9272c5c82d4763",
+            "verified": true,
+            "node_status": "returned"
+          }
+        ],
+        "receipt": {
+          "receipt_hash": "0x55219230ef497fa2e680d00d083ca4027846a29dc1e949c71a9d9700d43e2b4b",
+          "rail": "escrow",
+          "payer": "0x2b621c1dcf0bbc03c7abceb023996d4570e4ba26",
+          "miner": "6126",
+          "intent": "TOKEN_HOLDER_COUNT_GENERAL",
+          "amount_uusdc": "10000",
+          "epoch_id": 51,
+          "settlement": "epoch",
+          "chain": "telegraph",
+          "timestamp": 1795562694
+        }
+      },
+      "latency_ms": 4111
+    },
+    {
+      "id": "treasury",
+      "title": "Treasury state",
+      "intent": "ONCHAIN_METRIC_VERIFY_GENERAL",
+      "status": "pass",
+      "detail": "Treasury live on chain (balance 7202172.091867872 gwei, tx count ?).",
+      "evidence": {
+        "balance_gwei": 7202172.091867872,
+        "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "block": "12205756",
+        "chain": "eth",
+        "tx_count": null
+      },
+      "purchase": {
+        "cost_uusdc": 10000,
+        "cost_usd": 0.01,
+        "signal_hashes": [
+          "0x8efc3a6d1187c2d225370d205414a56758ccc513eea9e3b1dd36bb55d3963ba9"
+        ],
+        "signal_verification": [
+          {
+            "hash": "0x8efc3a6d1187c2d225370d205414a56758ccc513eea9e3b1dd36bb55d3963ba9",
+            "verified": true,
+            "node_status": "returned"
+          }
+        ],
+        "receipt": {
+          "receipt_hash": "0x66be9ebcf257d90bf5dea250a2a37b9ef5acd2b3c1f5889fba0568b70f69a7b5",
+          "rail": "escrow",
+          "payer": "0x2b621c1dcf0bbc03c7abceb023996d4570e4ba26",
+          "miner": "6121",
+          "intent": "ONCHAIN_METRIC_VERIFY_GENERAL",
+          "amount_uusdc": "10000",
+          "epoch_id": 51,
+          "settlement": "epoch",
+          "chain": "telegraph",
+          "timestamp": 1795562739
+        }
+      },
+      "latency_ms": 48573
+    },
+    {
+      "id": "sanctions_0",
+      "title": "Sanctions screening — Lazarus Group",
+      "intent": "SANCTIONS_SCREENING_MATCH_GENERAL",
+      "status": "fail",
+      "detail": "Sanctions match reported (matched=true, score=1, matches=1).",
+      "evidence": {
+        "name": "Lazarus Group",
+        "matched": true,
+        "matches": [
+          "LAZARUS GROUP"
+        ],
+        "lists": [
+          "OFAC SDN list"
+        ],
+        "match_score": 1
+      },
+      "purchase": {
+        "cost_uusdc": 10000,
+        "cost_usd": 0.01,
+        "signal_hashes": [
+          "0x82c179adb0727231a53a8f8e759afc04400c932f028f3a01a8857339bc0388d0"
+        ],
+        "signal_verification": [
+          {
+            "hash": "0x82c179adb0727231a53a8f8e759afc04400c932f028f3a01a8857339bc0388d0",
+            "verified": true,
+            "node_status": "returned"
+          }
+        ],
+        "receipt": {
+          "receipt_hash": "0x2caab002eec3abc63601f0656ea3b4b2c83270424d29f0798a48000946f08f11",
+          "rail": "escrow",
+          "payer": "0x2b621c1dcf0bbc03c7abceb023996d4570e4ba26",
+          "miner": "6121",
+          "intent": "SANCTIONS_SCREENING_MATCH_GENERAL",
+          "amount_uusdc": "10000",
+          "epoch_id": 51,
+          "settlement": "epoch",
+          "chain": "telegraph",
+          "timestamp": 1795562704
+        }
+      },
+      "latency_ms": 14420
+    },
+    {
+      "id": "social",
+      "title": "Social authenticity",
+      "intent": "SOCIAL_BOT_DETECTION_GENERAL",
+      "status": "fail",
+      "detail": "Social account judged likely automated (verdict: inconclusive, bot score 0.8).",
+      "evidence": {
+        "account": "@NorthBridgeYield",
+        "verdict": "inconclusive",
+        "bot_score": 0.8,
+        "signals": [
+          "inconclusive - Likely uncertain - the single handle \"@NorthBridgeYield\" provides no observable behavior, content, or interaction patterns to determine whether it's automated or human‑run."
+        ]
+      },
+      "purchase": {
+        "cost_uusdc": 10000,
+        "cost_usd": 0.01,
+        "signal_hashes": [
+          "0x7b383dc91fcb48521a7255c688665c8e1ea25381bf9fc53772a6a588efd1ea42"
+        ],
+        "signal_verification": [
+          {
+            "hash": "0x7b383dc91fcb48521a7255c688665c8e1ea25381bf9fc53772a6a588efd1ea42",
+            "verified": true,
+            "node_status": "returned"
+          }
+        ],
+        "receipt": {
+          "receipt_hash": "0x5b9bbffb5633adc7749a4fb9c64cf0d407db1b06b33e8ac620dff73f1bec3fce",
+          "rail": "escrow",
+          "payer": "0x2b621c1dcf0bbc03c7abceb023996d4570e4ba26",
+          "miner": "6119",
+          "intent": "SOCIAL_BOT_DETECTION_GENERAL",
+          "amount_uusdc": "10000",
+          "epoch_id": 51,
+          "settlement": "epoch",
+          "chain": "telegraph",
+          "timestamp": 1795562717
+        }
+      },
+      "latency_ms": 27424
+    },
+    {
+      "id": "code",
+      "title": "Code review",
+      "intent": "CODE_REVIEW_GENERAL",
+      "status": "pass",
+      "detail": "Code review verdict: Approve.",
+      "evidence": {
+        "verdict": "Approve",
+        "findings": [
+          "Missing zero‑address check",
+          "No event emission",
+          "No initial supply or minting",
+          "No ownership transfer",
+          "No allowance/approve",
+          "No overflow protection"
+        ],
+        "summary": "No security or reliability smells were found by the static checks (code execution, injection, secrets, weak crypto, TLS, deserialisation, error handling); this is a pattern review, not a proof of correctness."
+      },
+      "purchase": {
+        "cost_uusdc": 10000,
+        "cost_usd": 0.01,
+        "signal_hashes": [
+          "0x0dcfd29dee3a557363791979173a38a1eec395c8d0fc54dcb1a8879ddbf14ad5"
+        ],
+        "signal_verification": [
+          {
+            "hash": "0x0dcfd29dee3a557363791979173a38a1eec395c8d0fc54dcb1a8879ddbf14ad5",
+            "verified": true,
+            "node_status": "returned"
+          }
+        ],
+        "receipt": {
+          "receipt_hash": "0x4321a1bf0b9023145a6a215cab8f185773e855f57c8147dd44e4b2a8aa9f50e1",
+          "rail": "escrow",
+          "payer": "0x2b621c1dcf0bbc03c7abceb023996d4570e4ba26",
+          "miner": "5311",
+          "intent": "CODE_REVIEW_GENERAL",
+          "amount_uusdc": "10000",
+          "epoch_id": 51,
+          "settlement": "epoch",
+          "chain": "telegraph",
+          "timestamp": 1795562746
+        }
+      },
+      "latency_ms": 55897
+    }
+  ],
+  "totals": {
+    "purchases": 6,
+    "cost_uusdc": 310000,
+    "cost_usd": 0.31
+  },
+  "risk_score": 8,
+  "recommendation": "REJECT",
+  "reasons": [
+    "Smart contract audit: WARN — Audit answer mentions high-severity classes (reentrancy / access control / high severity); unstructured answer, human review advised.",
+    "Sanctions screening — Lazarus Group: FAIL — Sanctions match reported (matched=true, score=1, matches=1).",
+    "Social authenticity: FAIL — Social account judged likely automated (verdict: inconclusive, bot score 0.8)."
+  ],
+  "verification": {
+    "memo_hash": "0x09155414061f833cc7f65d6fa73ce7b4d2e95749016a87362c00217c6abd5779",
+    "signer": "0x2B621C1dCf0bbc03C7aBceb023996d4570E4BA26",
+    "signature": "0xd433e48599b5fe08bd9e203f0a2e51db71bfd96d26b9534f2d7f45b861562f6663deb3657e733a267804b4cd1f3632d8e434de78d17f25d1543c800fbc81aedb1b",
+    "method": "EIP-191 personal_sign of keccak256(canonical memo JSON)"
+  }
+}
