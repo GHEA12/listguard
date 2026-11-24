@@ -1,0 +1,293 @@
+{
+  "memo": "ListGuard listing risk memo",
+  "version": 1,
+  "generated_at": "2026-11-24T23:24:44.514Z",
+  "network": "Telegraph testnet — beta 2 (Ethereum Sepolia escrow)",
+  "application": {
+    "project": "Uniswap (UNI) — sample listing application",
+    "token": {
+      "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+      "chain": "ethereum"
+    },
+    "entities": [
+      "Uniswap Labs"
+    ],
+    "treasury": [
+      "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
+    ],
+    "social": "@Uniswap"
+  },
+  "checks": [
+    {
+      "id": "audit",
+      "title": "Smart contract audit",
+      "intent": "SMART_CONTRACT_AUDIT_GENERAL",
+      "status": "warn",
+      "detail": "Audit answer mentions high-severity classes (reentrancy / access control / high severity); unstructured answer, human review advised.",
+      "evidence": {
+        "miner_id": "openai",
+        "miner_name": "openai",
+        "endpoint": "/chat",
+        "result": "I am sorry, but I cannot provide a real-time audit of a smart contract at a specific address. My capabilities do not include live interaction with the blockchain or the ability to execute and analyze smart contract code in real-time. Therefore, I cannot assess reentrancy, access control, overflow, delegatecall, or selfdestruct risks for the contract at `0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984`.\n\nTo get an audit for this contract, you would need to engage a professional smart contract auditing firm or use specialized blockchain analysis tools that can interact with the Ethereum network.",
+        "result_shape": "raw",
+        "shape_error": "no_format",
+        "cost_usd": 0,
+        "duration_ms": 1204,
+        "timestamp": "2026-11-24T23:23:50.751366796Z",
+        "reasoning": "last resort, no miner could answer: intent_not_active: SMART_CONTRACT_AUDIT_GENERAL is registered, not active, so it takes no routed requests: output schema: it has no response format, its own or its family's; input schema: no response format declares inputs, its own or its family's",
+        "intent": "SMART_CONTRACT_AUDIT_GENERAL",
+        "intent_version": 1,
+        "signal_hash": "0x0e17fd23b7b1ff05cc073bc66c2bffb752a8d4643ad1c5feafdbc534afc33d12",
+        "warnings": [
+          "no miner could answer this, so it was answered by a general model"
+        ],
+        "delivery": "last_resort"
+      },
+      "purchase": {
+        "cost_uusdc": 260000,
+        "cost_usd": 0.26,
+        "signal_hashes": [
+          "0x0e17fd23b7b1ff05cc073bc66c2bffb752a8d4643ad1c5feafdbc534afc33d12"
+        ],
+        "signal_verification": [
+          {
+            "hash": "0x0e17fd23b7b1ff05cc073bc66c2bffb752a8d4643ad1c5feafdbc534afc33d12",
+            "verified": true,
+            "node_status": "returned"
+          }
+        ]
+      },
+      "latency_ms": 3204
+    },
+    {
+      "id": "holders",
+      "title": "Holder concentration",
+      "intent": "TOKEN_HOLDER_COUNT_GENERAL",
+      "status": "pass",
+      "detail": "432087 distinct holders.",
+      "evidence": {
+        "token": null,
+        "chain": null,
+        "holders_count": 432087,
+        "token_symbol": null
+      },
+      "purchase": {
+        "cost_uusdc": 10000,
+        "cost_usd": 0.01,
+        "signal_hashes": [
+          "0xb81a2be3ec5cf89e2fa047c32f65c0a927e734b750e4edcb7095e633c0d6c3fd"
+        ],
+        "signal_verification": [
+          {
+            "hash": "0xb81a2be3ec5cf89e2fa047c32f65c0a927e734b750e4edcb7095e633c0d6c3fd",
+            "verified": true,
+            "node_status": "returned"
+          }
+        ],
+        "receipt": {
+          "receipt_hash": "0x3d2f9ec7be8bb2a28acaa3758d0e8e04b9d1be7189ac0214f19139cc2891c92a",
+          "rail": "escrow",
+          "payer": "0x2b621c1dcf0bbc03c7abceb023996d4570e4ba26",
+          "miner": "6126",
+          "intent": "TOKEN_HOLDER_COUNT_GENERAL",
+          "amount_uusdc": "10000",
+          "epoch_id": 51,
+          "settlement": "epoch",
+          "chain": "telegraph",
+          "timestamp": 1795562631
+        }
+      },
+      "latency_ms": 4168
+    },
+    {
+      "id": "treasury",
+      "title": "Treasury state",
+      "intent": "ONCHAIN_METRIC_VERIFY_GENERAL",
+      "status": "pass",
+      "detail": "Treasury live on chain (balance 0 gwei, tx count 1).",
+      "evidence": {
+        "balance_gwei": 0,
+        "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+        "block": "12205750",
+        "chain": "eth",
+        "tx_count": 1
+      },
+      "purchase": {
+        "cost_uusdc": 10000,
+        "cost_usd": 0.01,
+        "signal_hashes": [
+          "0x8d37558ab525459ef66d18c16021671f8efd059a6409daec80bf5ffd2b14ea78"
+        ],
+        "signal_verification": [
+          {
+            "hash": "0x8d37558ab525459ef66d18c16021671f8efd059a6409daec80bf5ffd2b14ea78",
+            "verified": true,
+            "node_status": "returned"
+          }
+        ],
+        "receipt": {
+          "receipt_hash": "0xbea82ce3d7966aff278de0b447aba2eb948f6a8b7eca5e7d3430a623660eb92b",
+          "rail": "escrow",
+          "payer": "0x2b621c1dcf0bbc03c7abceb023996d4570e4ba26",
+          "miner": "6121",
+          "intent": "ONCHAIN_METRIC_VERIFY_GENERAL",
+          "amount_uusdc": "10000",
+          "epoch_id": 51,
+          "settlement": "epoch",
+          "chain": "telegraph",
+          "timestamp": 1795562684
+        }
+      },
+      "latency_ms": 56664
+    },
+    {
+      "id": "sanctions_0",
+      "title": "Sanctions screening — Uniswap Labs",
+      "intent": "SANCTIONS_SCREENING_MATCH_GENERAL",
+      "status": "warn",
+      "detail": "Partial sanctions similarity (score 0.75) with no confirmed match.",
+      "evidence": {
+        "name": "Uniswap Labs",
+        "matched": false,
+        "matches": null,
+        "lists": [
+          "OFAC SDN"
+        ],
+        "match_score": 0.75
+      },
+      "purchase": {
+        "cost_uusdc": 10000,
+        "cost_usd": 0.01,
+        "signal_hashes": [
+          "0xc7bdd2257600e29aba09aa37e808bde13cb0f4a1f1b515e3a0d4a936cc047514"
+        ],
+        "signal_verification": [
+          {
+            "hash": "0xc7bdd2257600e29aba09aa37e808bde13cb0f4a1f1b515e3a0d4a936cc047514",
+            "verified": true,
+            "node_status": "returned"
+          }
+        ],
+        "receipt": {
+          "receipt_hash": "0xb992729776c87d05d0aa6b5f55c539c8103bf61700f62d2b9dd881a3913f2ac7",
+          "rail": "escrow",
+          "payer": "0x2b621c1dcf0bbc03c7abceb023996d4570e4ba26",
+          "miner": "6121",
+          "intent": "SANCTIONS_SCREENING_MATCH_GENERAL",
+          "amount_uusdc": "10000",
+          "epoch_id": 51,
+          "settlement": "epoch",
+          "chain": "telegraph",
+          "timestamp": 1795562674
+        }
+      },
+      "latency_ms": 47090
+    },
+    {
+      "id": "social",
+      "title": "Social authenticity",
+      "intent": "SOCIAL_BOT_DETECTION_GENERAL",
+      "status": "error",
+      "detail": "Social answer carried no verdict or bot score.",
+      "evidence": {
+        "account": "@Uniswap",
+        "verdict": "likely_human",
+        "bot_score": null,
+        "signals": [
+          "likely_human - the account name is simply a reference to a popular platform and provides no clear automated posting pattern or bot-like characteristics."
+        ]
+      },
+      "purchase": {
+        "cost_uusdc": 10000,
+        "cost_usd": 0.01,
+        "signal_hashes": [
+          "0x24da1156bbad09c2992ac44059bdfeaa689d65af2a682a3691487da673d5d3a9"
+        ],
+        "signal_verification": [
+          {
+            "hash": "0x24da1156bbad09c2992ac44059bdfeaa689d65af2a682a3691487da673d5d3a9",
+            "verified": true,
+            "node_status": "returned"
+          }
+        ],
+        "receipt": {
+          "receipt_hash": "0xd9b4e04c0831b2f68bd0080413cffe394b41c159c911bfb4df0c1b1142582469",
+          "rail": "escrow",
+          "payer": "0x2b621c1dcf0bbc03c7abceb023996d4570e4ba26",
+          "miner": "6119",
+          "intent": "SOCIAL_BOT_DETECTION_GENERAL",
+          "amount_uusdc": "10000",
+          "epoch_id": 51,
+          "settlement": "epoch",
+          "chain": "telegraph",
+          "timestamp": 1795562684
+        }
+      },
+      "latency_ms": 56798
+    },
+    {
+      "id": "code",
+      "title": "Code review",
+      "intent": "CODE_REVIEW_GENERAL",
+      "status": "pass",
+      "detail": "Code review verdict: Approve.",
+      "evidence": {
+        "verdict": "Approve",
+        "findings": [
+          "Missing zero‑address check",
+          "No event emission",
+          "No initial supply or minting",
+          "No ownership transfer",
+          "No allowance/approve",
+          "No overflow protection"
+        ],
+        "summary": "No security or reliability smells were found by the static checks (code execution, injection, secrets, weak crypto, TLS, deserialisation, error handling); this is a pattern review, not a proof of correctness."
+      },
+      "purchase": {
+        "cost_uusdc": 10000,
+        "cost_usd": 0.01,
+        "signal_hashes": [
+          "0x05823993bf1314b17b547383cfdf1ce1f8d143a969668d3b265b9681bdd19926"
+        ],
+        "signal_verification": [
+          {
+            "hash": "0x05823993bf1314b17b547383cfdf1ce1f8d143a969668d3b265b9681bdd19926",
+            "verified": true,
+            "node_status": "returned"
+          }
+        ],
+        "receipt": {
+          "receipt_hash": "0x957007994112b410583367b30bcf3e0fe406f42a4cd4d5ab9c1514c23f46f7b1",
+          "rail": "escrow",
+          "payer": "0x2b621c1dcf0bbc03c7abceb023996d4570e4ba26",
+          "miner": "5311",
+          "intent": "CODE_REVIEW_GENERAL",
+          "amount_uusdc": "10000",
+          "epoch_id": 51,
+          "settlement": "epoch",
+          "chain": "telegraph",
+          "timestamp": 1795562683
+        }
+      },
+      "latency_ms": 55963
+    }
+  ],
+  "totals": {
+    "purchases": 6,
+    "cost_uusdc": 310000,
+    "cost_usd": 0.31
+  },
+  "risk_score": 68,
+  "recommendation": "MANUAL REVIEW",
+  "reasons": [
+    "Smart contract audit: WARN — Audit answer mentions high-severity classes (reentrancy / access control / high severity); unstructured answer, human review advised.",
+    "Sanctions screening — Uniswap Labs: WARN — Partial sanctions similarity (score 0.75) with no confirmed match.",
+    "Social authenticity: ERROR — Social answer carried no verdict or bot score."
+  ],
+  "verification": {
+    "memo_hash": "0xdc824bea51b69519849bd37db1347b7ae81eb00ca5d800097b8a377b46f14209",
+    "signer": "0x2B621C1dCf0bbc03C7aBceb023996d4570E4BA26",
+    "signature": "0x8e5876e0d03ef4ceea636e85cf37eb10f8e4d839e1b422f84634a30d65cbfc964c66b19066c8e8d0af0ef615589172dc5ec876883f69d24323731972f91d203d1c",
+    "method": "EIP-191 personal_sign of keccak256(canonical memo JSON)"
+  }
+}
