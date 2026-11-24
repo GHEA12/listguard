@@ -1,0 +1,17 @@
+{
+  "name": "listguard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ListGuard — an autonomous token-listing risk desk that buys intelligence through Telegraph (Hackathon Season II, Apps & Agents, Mission 01: Exchange).",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test test/desk.test.js",
+    "review": "node src/cli.js review",
+    "serve": "node src/cli.js serve"
+  },
+  "dependencies": {
+    "viem": "^2.38.0"
+  }
+}
