@@ -1,0 +1,13 @@
+{
+  "desk_wallet": "0x2B621C1dCf0bbc03C7aBceb023996d4570E4BA26",
+  "wallet_balances": {
+    "eth": 0.04999999999276445,
+    "usdc": 15
+  },
+  "escrow": {
+    "spendable_usd": 4.83,
+    "balance_usd": 5,
+    "unbilled_usd": 0.17
+  },
+  "spent_today_usd": 0.62
+}
